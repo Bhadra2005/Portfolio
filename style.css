@@ -1,0 +1,205 @@
+body{
+    background-color: #191919;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 0;
+}
+
+.navbar ul{
+    display: flex;
+    list-style: none;
+    margin: 20px 0px;
+}
+
+.navbar ul li{
+    font-family: Verdana;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: #E7F6F2;
+    padding: 8px 25px;
+    transition: all .5s ease;
+}
+
+.navbar ul li a:hover{
+    background-color: #E7F6F2;
+    color: #191919;
+    box-shadow: 0 0 10px #E7F6F2;
+}
+
+#home{
+    display: flex;
+    flex-direction: column;
+    background-color: #191919;
+    height: 840px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #191919;
+    height: 2000px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+.first{
+    display: flex;
+    flex-direction: column;
+    color: #E7F6F2;
+    align-items: center;
+    position: absolute;
+    top: 25%;
+    text-align: center;
+}
+
+.para{
+    align-items: center;
+    margin: 50px;
+    text-align: center;
+}
+
+.btn{
+    padding: 10px 35px;
+    margin-bottom: 3%;
+    background-color: transparent;
+    border: 1px solid #E7F6F2;
+    color: #E7F6F2;
+    outline: none;
+    transition: .6s ease;
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: #E7F6F2;
+    color:#191919;
+    font-weight: bold;
+
+}
+
+.heading{
+    text-align: center;
+    font-size: 4rem;
+    color: #E7F6F2;
+    margin-top: 10%;
+}
+
+#about .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #E7F6F2;
+    font-size: large;
+    font-family: Verdana;
+    margin-bottom: 30%;
+}
+
+#edu .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+    padding-left: 3rem;
+}
+
+#edu .box-container .box{
+    width: 27rem;
+    margin: 4rem 1rem;
+    padding-left: 4rem;
+    border-left: .2rem solid #E7F6F2;
+    position: relative;
+}
+
+#edu .box-container .box span{
+    font-size: 1.3rem;
+    background: #222;
+    color: #E7F6F2;
+    border-radius: 5rem;
+    padding: .5rem 2.5rem;
+}
+
+#edu .box-container .box h3{
+    font-size: 2rem;
+    color: #E7F6F2;
+    padding-top: 1.5rem;
+}
+
+#edu .box-container .box p{
+    font-size: 1.4rem;
+    color: #E7F6F2;
+    padding-top: 1rem 0;
+}
+
+#ach .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    margin-bottom: 30%;
+}
+
+#ach .box-container .box{
+    height: 20rem;
+    width: 26rem;
+    border-radius: 1rem;
+    margin: 2rem;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#ach .box-container .box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#ach .box-container .box:hover img{
+    transform: scale(1.2);
+}
+
+#contact .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#contact .row .content{
+    flex: 1 1 30rem;
+    padding: 4rem;
+    padding-bottom: 0;
+}
+
+#contact .row .content .title{
+    font-family: Verdana;
+    color: #E7F6F2;
+    font-size: 3rem;
+}
+
+#contact .row .content .info h3{
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    color: #E7F6F2;
+    padding: 1rem 0;
+    font-weight: normal;
+    margin-bottom: 30%;
+}
